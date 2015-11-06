@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24.9.2015, 19:09:03
+    Modified on: 6.11.2015
+    Author     : Jesse, Rami
+*/
+
+#top_div { 
+    width: 1200px;
+    background-color: orange;
+    color: white;
+}
+
+
+#main_control {
+	/* 	this is a static div that provides a background colour for the channels column during resize: avoids a white gap from appearing 
+		we show it above the channel column during loading
+	*/
+	height: 1800px;
+	width: 300px;
+	background: orange;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1041; /* show channel column bg above loading zone during loading */
+        color: white;
+}
+
+
+#indoor_outdoor_control {
+
+    height: 500px;
+    width: 800px;
+    margin-top: 10px;
+    margin-left: 300px;
+    background-color: grey;
+    color: white;
+}
+
+
+#map { 
+    height: 450px;
+    width: 850px;
+    margin-top: 10px;
+    margin-left: 300px;
+       
+           
+}

@@ -10,24 +10,33 @@ and open the template in the editor.
 */
 
 #top_div { 
+    height: 200px;
     width: 1200px;
-    background-color: orange;
+    background-color: blue;
     color: white;
 }
 
+p {
+    color: green;
+}
+
+p2 {
+    color: red;
+}
 
 #main_control {
 	/* 	this is a static div that provides a background colour for the channels column during resize: avoids a white gap from appearing 
 		we show it above the channel column during loading
 	*/
-	height: 1800px;
-	width: 300px;
-	background: orange;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1041; /* show channel column bg above loading zone during loading */
-        color: white;
+    margin-top: 0px;
+    height: 1800px;
+    width: 300px;
+    background: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1041; /* show channel column bg above loading zone during loading */
+    color: white;
 }
 
 

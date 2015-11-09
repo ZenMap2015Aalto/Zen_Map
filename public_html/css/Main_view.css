@@ -50,6 +50,15 @@ p2 {
     color: white;
 }
 
+#practice_jquery {
+    position: relative;
+    height: 50px;
+    width: 100px;
+    left: 100px;
+    top: 200px;
+    background-color: green;
+}
+
 
 #map { 
     height: 450px;
@@ -59,3 +68,12 @@ p2 {
        
            
 }
+
+#submit_request {
+    
+    position: relative; /* positioned inside the div element */
+    transition: .5s ease;
+    left: 300px;
+    top: 400px;
+}
+

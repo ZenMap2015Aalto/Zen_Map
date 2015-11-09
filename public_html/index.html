@@ -11,9 +11,17 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/lib/leaflet.css" />
         <link rel="stylesheet" href="css/Main_view.css" />
+        <link rel="stylesheet" href="css/lib/bootstrap.min.js"/>
+        <script src="js/lib/jquery-2.1.4.js"></script>        
+        <script src="js/lib/bootstrap.min.js"></script>
+
+        
     </head>
 
+
+    
     <body>
+
         
         <div id="top_div"><h1 align="center"> Posti - workshift planning tool</h1>
             <img src="http://virtamedia.com/wp-content/uploads/2015/03/Posti_Logo_ap.jpg" height="100" width="200" align="right"> 
@@ -38,13 +46,16 @@ and open the template in the editor.
         <div id="right_panel" style="position: relative; width: 75%"></div>
             <div id="indoor_outdoor_control"> 
                 
-                <article>
-                    <p2> Add here the controls for indoor and outdoor work. I guess the user will first select the available 
+                <h1>
+                    Add here the controls for indoor and outdoor work. I guess the user will first select the available 
                         workers and then assign the indoor and outdoor activies for them. Should we make it so that when the user 
-                        adds workers he can select them from a database of possible workers?              
-                    </p2>
-                </article>    
+                        adds workers he can select them from a database of possible workers?                                  
+                </h1>  
                 
+                <button id="submit_request" type="submit"> Request routing </button> 
+                <div id="practice_jquery">
+                    some text
+                </div>
             </div>
             <h1> testsetsets </h1>
             
@@ -54,7 +65,13 @@ and open the template in the editor.
             <script src="js/example_leaflet_map.js"></script> 
 
        
+        <script>
             
+        $(function() {
+            $("#practice_jquery").hide(300).show(300).hide(300);
+        });
+        
+        </script>
 
     </body>
 

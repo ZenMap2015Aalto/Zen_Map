@@ -1,0 +1,2 @@
+OBJECTID;Facility_ID;StartEnd_ID;StartEnd;Intermediate;Facility_Name;Address;Street_Number;Street_Prefix;Street_PreType;Street_Name;Street_Type;Street_Suffix;Building;City;State;PostalCode;Plus_4;Ref_ID;Side;Score;Status;Match_Code;RS_Match;X;Y;Penalty;Duration
+1;1;;;;Tuomaalankatu 1;;;;;;;;;;;;;510,683;L;0;M;;P;3,297,715.785938977300000;6,991,703.625598799400000;0.000000000000000;0.000000000000000

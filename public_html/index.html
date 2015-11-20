@@ -66,65 +66,84 @@ and open the template in the editor.
             <div id="indoor_outdoor_control"> 
                 
                 <h1>
-                    Add here the controls for indoor and outdoor work. I guess the user will first select the available 
-                        workers and then assign the indoor and outdoor activies for them. Should we make it so that when the user 
-                        adds workers he can select them from a database of possible workers?                                  
+                    Assign indoor and outdoor workhours and submit request
                 </h1>  
+                <br
+                <!-- https://www.datatables.net/download/-->
                 
                 <!-- testing dataTables-->
-                <link rel="stylesheet" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
-                <script type="text/javascript" charset="utf-8" src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.js"></script>
+                <!--<link rel="stylesheet" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">-->
+                <link rel="stylesheet" href="css/lib/jquery.dataTables.min.css" />                
+                <!--<script type="text/javascript" charset="utf-8" src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.js"></script>-->
+                <script src="js/lib/jquery.dataTables.min.js"></script>
+                
+                
                 <script src="js/datatables_foo.js"></script>
                 
-                <table id="example" class="display" cellspacing="0" width="100%">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
-                            </tr>
-                        </thead>
-                        <tfoot>
-                            <tr>
-                                <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
-                            </tr>
-                        </tfoot>
-                        <tbody>
-                            <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>$320,800</td>
-                            </tr>
-                            <tr>
-                                <td>Garrett Winters</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>63</td>
-                                <td>2011/07/25</td>
-                                <td>$170,750</td>
-                            </tr>
-                            <tr>
-                                <td>Ashton Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>San Francisco</td>
-                                <td>66</td>
-                                <td>2009/01/12</td>
-                                <td>$86,000</td>
-                            </tr>
-                        </tbody>
-                </table>                                                                                                     
                 
+                <!-- so the submit button does not need any further reference to the form?-->
+                <button type="submit"> request route </button>
+                
+                <table id="example" class="display" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Indoor</th>
+                        <th>Outdoor</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Name</th>
+                        <th>Indoor</th>
+                        <th>Outdoor</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Postman Pat</td>
+                        <td><input id="row-1-indoor" name="row-1-indoor" value="30" type="text"></td>
+                        <td><select size="1" id="row-1-outdoor" name="row-1-outdoor">
+                            <option value="3" selected="selected">
+                                3
+                            </option>
+                            <option value="4">
+                                4
+                            </option>
+                            <option value="5">
+                                5
+                            </option>
+                            <option value="6">
+                                6
+                            </option>
+                            <option value="7">
+                                7
+                            </option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Dave</td>
+                        <td><input id="row-1-indoor" name="row-1-indoor" value="30" type="text"></td>
+                        <td><select size="1" id="row-1-outdoor" name="row-1-outdoor">
+                            <option value="3" selected="selected">
+                                3
+                            </option>
+                            <option value="4">
+                                4
+                            </option>
+                            <option value="5">
+                                5
+                            </option>
+                            <option value="6">
+                                6
+                            </option>
+                            <option value="7">
+                                7
+                            </option>
+                        </select></td>
+                    </tr>                                                                                                    
+                </tbody>
+            </table>
             </div>
             
             

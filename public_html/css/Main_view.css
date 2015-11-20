@@ -69,8 +69,7 @@ p2 {
            
 }
 
-#submit_request {
-    
+#submit_request {   
     position: relative; /* positioned inside the div element */
     transition: .5s ease;
     left: 300px;

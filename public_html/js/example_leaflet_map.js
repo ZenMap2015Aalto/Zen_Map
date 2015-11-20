@@ -55,7 +55,7 @@ $(document).ready(function(){
        //alert(datax);
        //process text file line by line
        var lines = datax.split('\n');
-       //alert(lines);
+       alert(lines);
        var yparse = lines[0];
        //alert(xparse)
        var xparse = lines[1];

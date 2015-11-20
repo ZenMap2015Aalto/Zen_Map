@@ -4,4 +4,6 @@
  * and open the template in the editor.
  */
 
-
+$(document).ready(function() {
+    $('#example').DataTable();
+} );

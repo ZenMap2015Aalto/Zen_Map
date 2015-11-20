@@ -11,39 +11,56 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/lib/leaflet.css" />
         <link rel="stylesheet" href="css/Main_view.css" />
-        <link rel="stylesheet" href="css/lib/bootstrap.min.js"/>
+        <link rel="stylesheet" href="css/lib/bootstrap.min.css"/>
+        
+        <link rel="stylesheet" href="css/lib/pickmeup.css" type="text/css" />
+        <link rel="stylesheet" media="screen" type="text/css" href="css/lib/demo.css" />
+
+        
         <script src="js/lib/jquery-2.1.4.js"></script>        
         <script src="js/lib/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.O\SMGeocoder.css"/>
-        
+        <!-- <link rel="stylesheet" href="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.css"/> -->        
     </head>
 
 
     
     <body>
-
         
+        <!-- Here starts the top division -->
         <div id="top_div"><h1 align="center"> Posti - workshift planning tool</h1>
-            <img src="http://virtamedia.com/wp-content/uploads/2015/03/Posti_Logo_ap.jpg" height="100" width="200" align="right"> 
-        
+            <img src="http://virtamedia.com/wp-content/uploads/2015/03/Posti_Logo_ap.jpg" height="100" width="200" align="right">         
         </div>
         <p></p>
-        
-
-             
+           
+        <!-- Here starts the left bar   --> 
         <div id="main_control"> 
-            
-
             <article>
-                <p> Testing github test
+                <p> 
                     Short description of our tool. In this left panel we should insert calendar to select the date. 
-                    I think it is better if the user can login to only his own delivery center. So we do not need the select delivery center option here?> </p>
+                </p>
             </article>
-        
+      
+
+           <!-- Add here the calendar </script>   
+            <script type="text/javascript" src="js/lib/jquery.pickmeup.js"></script> 
+            <script type="text/javascript" src="js/lib/demo.js"></script>
+            <section>
+                    <h2>Single date</h2>
+                    <article>
+                            <div class="single"></div>
+                    </article>
+            </section>--> 
+            <br>
+            <br>
+            
+            <!-- Add here dropdown menu to select facility
+            <p>                
+                    <script src="js/ReadFacility.js"></script>
+                    Dropdown menu to select the facility
+            </p>   -->           
         </div>
         
-
 
         <div id="right_panel" style="position: relative; width: 75%"></div>
             <div id="indoor_outdoor_control"> 
@@ -54,42 +71,72 @@ and open the template in the editor.
                         adds workers he can select them from a database of possible workers?                                  
                 </h1>  
                 
-                <button id="submit_request" type="submit"> Request routing </button> 
-                <div id="practice_jquery">
-                    some text
-                </div>
+                <!-- testing dataTables-->
+                <link rel="stylesheet" href="//cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
+                <script type="text/javascript" charset="utf-8" src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.js"></script>
+                <script src="js/datatables_foo.js"></script>
+                
+                <table id="example" class="display" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Start date</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Office</th>
+                                <th>Age</th>
+                                <th>Start date</th>
+                                <th>Salary</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>2011/04/25</td>
+                                <td>$320,800</td>
+                            </tr>
+                            <tr>
+                                <td>Garrett Winters</td>
+                                <td>Accountant</td>
+                                <td>Tokyo</td>
+                                <td>63</td>
+                                <td>2011/07/25</td>
+                                <td>$170,750</td>
+                            </tr>
+                            <tr>
+                                <td>Ashton Cox</td>
+                                <td>Junior Technical Author</td>
+                                <td>San Francisco</td>
+                                <td>66</td>
+                                <td>2009/01/12</td>
+                                <td>$86,000</td>
+                            </tr>
+                        </tbody>
+                </table>                                                                                                     
+                
             </div>
-            <h1> testsetsets </h1>
             
             
             
             
             <div id="map"> Mapping element </div>
-
             <script src="js/lib/leaflet.js"></script>
+            <!--<script src="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.js"></script>-->
+            <script src="js/lib/Control.OSMGeocoder.js"></script>
             
-            <script src="http://k4r573n.github.io/leaflet-control-osm-geocoder/Control.OSMGeocoder.js"></script>
             <script src="js/example_leaflet_map.js"></script>
-
-       
-        <script>
             
-        $(function() {
-            $("#practice_jquery").hide(300).show(300).hide(300);
-        });
-        
-        </script>
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     </body>
 
 </html>

@@ -42,12 +42,12 @@ p2 {
 
 #indoor_outdoor_control {
 
-    height: 500px;
-    width: 800px;
+    height: 600px;
+    width: 1000px;
     margin-top: 10px;
     margin-left: 300px;
-    background-color: grey;
-    color: white;
+    background-color: lightgrey;
+    color: black;
 }
 
 #practice_jquery {
